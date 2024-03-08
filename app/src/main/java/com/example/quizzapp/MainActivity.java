@@ -78,6 +78,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             selectedAnswer = clickedButton.getText().toString();
             clickedButton.setBackgroundColor(Color.MAGENTA);
         }
+        totalQuestionsTextView.setText("Total questions: "+(totalQuestion-currentQuestionIndex));
+        if(currentQuestionIndex==totalQuestion) totalQuestionsTextView.setText("Level completed! Good job!");
+
     }
 
 
